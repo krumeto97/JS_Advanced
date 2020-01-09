@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\.vscode\\01.Syntax, Functions and Statements\\StringLength.js"
+            "program": "${workspaceFolder}\\.vscode\\01.Syntax, Functions and Statements\\2.MathOperations.js"
         }
     ]
 }
