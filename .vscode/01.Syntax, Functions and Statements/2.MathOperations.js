@@ -1,13 +1,3 @@
-function solve(num1, num2, operator){
-    let result;
-    switch(operator){
-        case "+": result=num1+num2; break;
-        case "-": result=num1-num2; break;
-        case "/": result=num1/num2; break;
-        case "*": result=num1*num2; break;
-        case "%": result=num1%num2; break;
-        case "**": result=num1**num2; break;
+function solve(operator, x, y){
+    return eval(`${x}${operator}${y}`);
     }
-    console.log(result);
-}
-solve(1,2,'+');
