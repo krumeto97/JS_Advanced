@@ -1,0 +1,25 @@
+{
+  "name": "js_advanced",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint":"jshint"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krumeto97/JS_Advanced.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krumeto97/JS_Advanced/issues"
+  },
+  "homepage": "https://github.com/krumeto97/JS_Advanced#readme",
+  "devDependencies": {
+    "jshint": "2.11.0-rc1"
+  }
+}
