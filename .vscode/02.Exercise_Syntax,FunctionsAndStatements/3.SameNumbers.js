@@ -7,9 +7,7 @@ function same(x) {
             isTrue = false;
         }
     });
-    let sum = x
-        .toString()
-        .split('')
+    let sum = b
         .map(Number)
         .reduce((a, b) => a + b, 0);
     console.log(isTrue);
