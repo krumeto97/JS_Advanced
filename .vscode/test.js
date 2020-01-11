@@ -1,1 +1,0 @@
-let myMoney=prompt('Enter money');
