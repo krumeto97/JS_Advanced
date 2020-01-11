@@ -10,6 +10,7 @@
         "skipFiles": [
             "<node_internals>/**"
         ],
-        "program": "${workspaceFolder}\\.vscode\\01.Syntax, Functions and Statements\\7.DayOfWeek.js"
+        "program": "${workspaceFolder}\\.vscode\\02.Exercise_Syntax,FunctionsAndStatements\\3.SameNumbers.js"
+
     }]
 }
