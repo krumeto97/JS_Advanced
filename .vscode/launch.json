@@ -10,7 +10,7 @@
         "skipFiles": [
             "<node_internals>/**"
         ],
-        "program": "${workspaceFolder}\\.vscode\\02.Exercise_Syntax,FunctionsAndStatements\\6.RoadRadar.js"
+        "program": "${workspaceFolder}\\.vscode\\02.Exercise_Syntax,FunctionsAndStatements\\9.CoffeeMachine.js"
 
     }]
 }
