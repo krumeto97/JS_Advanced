@@ -3,14 +3,17 @@
     // Hover to view descriptions of existing attributes.
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
-    "configurations": [{
-        "type": "node",
-        "request": "launch",
-        "name": "Launch Program",
-        "skipFiles": [
-            "<node_internals>/**"
-        ],
-        "program": "${workspaceFolder}\\.vscode\\02.Exercise_Syntax,FunctionsAndStatements\\9.CoffeeMachine.js"
+    "configurations": [
 
-    }]
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\.vscode\\2.Lab_Arrays\\7.BiggestElement.js"
+
+        }
+    ]
 }
