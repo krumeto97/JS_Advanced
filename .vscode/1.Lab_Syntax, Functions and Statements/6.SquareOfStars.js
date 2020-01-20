@@ -1,6 +1,3 @@
-function Square(a) {
-    for (let i = 0; i < a; i++) {
-        console.log('* '.repeat(a));
-    }
+function Square(...params) {
+    params.forEach()
 }
-Square(5);
