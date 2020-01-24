@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\.vscode\\3.Lab_Objects\\1.TownsToJSON.js"
+            "program": "${workspaceFolder}\\.vscode\\3.Lab_Objects\\6.PopulationsInTowns.js"
         }
     ]
 }
