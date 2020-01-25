@@ -1,30 +1,21 @@
-function fromJSONToHTMLTable(input) {
-    let objArr = JSON.parse(input[0]);
-    let html = '<table>\n';
-    html += '  <tr>';
-    Object.keys(objArr[0]).forEach(k => html += `<th>${k}</th>`);
-    html += '</tr>\n';
+function solve(input) {
+    String.prototype.htmlEscape = function () {
+        return this.replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;');
+    };
 
-    for (let obj of objArr) {
-        html += '  <tr>';
-        Object.keys(obj).forEach(k => html += `<td>${htmlEscape(String(obj[k]))}</td>`);
-        html += '</tr>\n';
+    let result = "<table>\n  <tr><th>name</th><th>score</th></tr>\n";
+    let table = JSON.parse(input);
+
+    for (let record of table) {
+        result += `  <tr><td>${record.name.htmlEscape()}</td><td>${record.score}</td></tr>\n`;
     }
 
-    html += '</table>';
-
-    console.log(html);
-
-    function htmlEscape(text) {
-        let map = {
-            '"': '&quot;',
-            '&': '&amp;',
-            "'": '&#39;',
-            '<': '&lt;',
-            '>': '&gt;'
-        };
-        return text.replace(/[\"&'<>]/g, ch => map[ch]);
-    }
+    result += "</table>";
+    return result;
 }
 solve([{
         "name": "Pesho",
