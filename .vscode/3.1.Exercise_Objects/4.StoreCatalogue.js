@@ -7,7 +7,7 @@ function solve(data) {
         a[product[0]] = [...a[product[0]], b];
         return a;
     }, []);
-
+    console.log(arr);
     Object.keys(arr).sort().map(x => {
         console.log(x);
         arr[x].sort().map(product => {
