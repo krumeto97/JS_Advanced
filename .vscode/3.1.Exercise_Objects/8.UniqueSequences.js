@@ -7,11 +7,19 @@ function solve(data) {
             return b - a;
         });
     });
-    sortArr = sortArr.reduce((a, b, i) => {
-
-        return a;
-    }, [])
-    console.log(sortArr);
+    let obj = [];
+    for (const iterator of sortArr) {
+        let sum = iterator.reduce((a, b) => a + b, 0);
+        if (!obj.hasOwnProperty(sum)) {
+            obj[sum] = iterator;
+        }
+    }
+    obj = obj.sort((a, b) => {
+        return a.length - b.length;
+    });
+    for (const iterator of Object.values(obj)) {
+        console.log(`[${iterator.join(', ')}]`);
+    }
 }
 solve([
     "[-3, -2, -1, 0, 1, 2, 3, 4]",
