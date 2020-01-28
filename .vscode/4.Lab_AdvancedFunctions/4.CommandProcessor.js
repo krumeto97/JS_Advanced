@@ -35,4 +35,3 @@ function solution() {
         print: () => console.log(str)
     }
 }
-solution().append('a');
