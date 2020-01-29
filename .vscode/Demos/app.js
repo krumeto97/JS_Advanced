@@ -1,4 +1,6 @@
-import { MOCK } from "./MOCK_DATA.js";
+import {
+    MOCK
+} from "./MOCK_DATA.js";
 
 (function (data, document) {
     let keys = Object.keys(data[0]);
@@ -8,6 +10,7 @@ import { MOCK } from "./MOCK_DATA.js";
     ${Array.isArray(content) ? content.join("") : content}
 </${tag}>`;
     }
+
     function createSingleTag(tag, prop, val) {
         return `<${tag} ${prop}="${val}"/>`;
     }
@@ -66,8 +69,7 @@ import { MOCK } from "./MOCK_DATA.js";
 
     function main(data) {
         return renderTable(
-            renderThead(renderTr(keys.map(key => defaultTh(key, dict[key]))))
-            +
+            renderThead(renderTr(keys.map(key => defaultTh(key, dict[key])))) +
             renderTbody(data.map(row => renderTr(keys.map(cell => defaultTd(cell, row[cell])))))
         );
     }
@@ -91,15 +93,3 @@ import { MOCK } from "./MOCK_DATA.js";
         }
     }, true);
 }(MOCK.slice(0, 20), document))
-
-
-
-
-
-
-
-
-
-
-
-
