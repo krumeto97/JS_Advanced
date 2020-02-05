@@ -17,3 +17,18 @@ function createArticle() {
 		content.value = "";
 	}
 }
+
+// const keysMap = {
+// 	10: function (evt) {
+// 		createArticle();
+// 	}
+// }
+
+// document.addEventListener("DOMContentLoaded", x => {
+// 	document.getElementById("createArticleButton").addEventListener("click", createArticle);
+// 	document.addEventListener("keypress", function (evt) {
+// 		if (typeof keysMap[evt.keyCode] === "function") {    //button handler
+// 			keysMap[evt.keyCode](evt);
+// 		}
+// 	})
+// })
