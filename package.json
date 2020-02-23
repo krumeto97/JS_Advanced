@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint":"jshint"
-    
+    "test": "mocha",
+    "lint": "jshint"
   },
   "repository": {
     "type": "git",
@@ -21,5 +20,9 @@
   "homepage": "https://github.com/krumeto97/JS_Advanced#readme",
   "devDependencies": {
     "jshint": "2.11.0-rc1"
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^7.0.1"
   }
 }
