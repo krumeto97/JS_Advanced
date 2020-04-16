@@ -1,0 +1,1 @@
+https://dmitripavlutin.com/gentle-explanation-of-this-in-javascript/ - gentle explanation of this keyword in JS 
